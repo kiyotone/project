@@ -8,14 +8,13 @@ function NavContents({name,icon}) {
       
       <div className="hover:bg-white rounded-l-3xl ml-[1px] flex flex-col  justify-center w-full h-12">
 
-      
         <div className="flex pl-3 items-center">
           <div className="">{icon}</div>
           <div className="ml-2">{name}</div>
         </div>  
-        </div>
       </div>
-    )
+    </div>
+  )
 }
 
 export default NavContents
