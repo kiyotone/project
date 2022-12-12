@@ -16,12 +16,12 @@ const Navbar=()=> {
     {
       name:"NetWork",
       icon:<RxDashboard/>,
-      link:"/network"
+      link:"/Register"
     }
     ,{
       name:"Register",
       icon:<RxDashboard/>,
-      link:"/register"
+      link:"/Login"
     }
     ,{
       name:"E-wallet",
@@ -39,6 +39,11 @@ const Navbar=()=> {
       name:"Logout",
       icon:<RxDashboard/>,
       link:"/logout"
+    },
+    {
+      name:"SignIn",
+      icon:<RxDashboard/>,
+      link:"/SignIn"
     }
     
   ]
