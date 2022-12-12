@@ -8,14 +8,15 @@ function NavContents({name,icon}) {
       
       <div className="hover:bg-white rounded-l-3xl ml-[1px] flex flex-col  justify-center w-full h-12">
 
-      
-        <div className="flex pl-3 items-center">
-          <div className="">{icon}</div>
-          <div className="ml-2">{name}</div>
-        </div>  
-        </div>
+        <a href="https://www.youtube.com/watch?v=j5a0jTc9S10">
+          <div className="flex pl-3 items-center">
+            <div className="">{icon}</div>
+            <div className="ml-2">{name}</div>
+          </div>  
+        </a>
       </div>
-    )
+    </div>
+  )
 }
 
 export default NavContents
