@@ -11,6 +11,7 @@ function NavContents({name,icon}) {
           <div className="">{icon}</div>
           <div className="ml-2">{name}</div>
         </div>  
+      
       </div>
       
     )

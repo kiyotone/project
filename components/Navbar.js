@@ -3,35 +3,42 @@ import logo from '../assets/logo.png'
 import Image from 'next/image'
 import {RxDashboard} from 'react-icons/rx'
 import NavContents from './NavContents'
+import  Link  from 'next/link'
 
 const Navbar=()=> {
   const buttons = [
     {
       name:"Dashboard",
-      icon:<RxDashboard/>
+      icon:<RxDashboard/>,
+      link:"/Dashboard"
     }
     ,
     {
       name:"NetWork",
-      icon:<RxDashboard/>
+      icon:<RxDashboard/>,
+      link:"/network"
     }
     ,{
       name:"Register",
-      icon:<RxDashboard/>
+      icon:<RxDashboard/>,
+      link:"/register"
     }
     ,{
       name:"E-wallet",
-      icon:<RxDashboard/>
+      icon:<RxDashboard/>,
+      link:"/e-wallet"
     }
     ,
     {
       name:"ProfileManagement",
-      icon:<RxDashboard/>
+      icon:<RxDashboard/>,
+      link:"/profile"
     }
     ,
     {
       name:"Logout",
-      icon:<RxDashboard/>
+      icon:<RxDashboard/>,
+      link:"/logout"
     }
     
   ]
@@ -50,7 +57,9 @@ const Navbar=()=> {
               
               buttons.map((element)=>
               (
+                <Link key={element.name} href={element.link}>
               <NavContents name={element.name} icon ={element.icon} />
+              </Link>
               )
               )
             
